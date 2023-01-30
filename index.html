@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio CV</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+   <!--A empezar, Menu encabezado-->
+   <div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <a href="#">mario</a>
+        </div>
+        <nav id="nav" >
+            <ul>
+                <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="#skills" onclick="seleccionar()" >HABILIDADES</a></li>
+                <li><a href="#curriculum" onclick="seleccionar()" >CURRICULUM</a></li>
+                <li><a href="#portfolio" onclick="seleccionar()" >PORTFOLIO</a></li>
+                <li><a href="#contacto" onclick="seleccionar()" >CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+    </header>
+   </div>
+
+   <!--PARTE DEL INICIO-->
+   <section id="inicio" class="inicio"> 
+    <div class="contenido-banner">       
+   <div class="contenedor-img">   
+    <img src="img/perfil.jpg" alt="">
+    </div>
+        <h1>Mario Rose</h1>
+            <h2>Desarrollador FrontEnd</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></i></a>
+            </div>
+           
+        </div> 
+    </section>       
+   
+
+ <!--PARTE DE SOBRE MI-->
+ <section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+        <h2>Sobre mi</h2>
+        <p><span>Hola, soy Mario Rose</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Consectetur praesentium obcaecati commodi quos placeat harum consequatur reiciendis
+             iure impedit voluptates! Numquam perferendis explicabo sunt eius voluptas cum voluptate libero eos.</p>
+
+             <div class="fila">
+                <!--aca van los datos personales-->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            11-03-1973
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            (906) 447-9355
+                        </li>
+                        <li>
+                            <strong>Mail</strong>
+                            mario.rose@example.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            jennie.nichols@example.com
+                        </li>
+                        <li>
+                            <strong>Direccion</strong>
+                            Michigan 264, Estados Unidos
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FULLSTACK DEVELOPER</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--intereses-->
+                <div class="col">
+                <h3>Intereses</h3>
+                <div class="contenedor-intereses">
+                    <div class="intereses">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>JUEGOS</span>
+                    </div>
+                    
+                        <div class="intereses">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                    
+                    <div class="intereses">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                         </div> 
+                    <div class="intereses">
+                        <i class="fa-solid fa-laptop"></i>
+                        <span>PC</span>
+                         </div>      
+                     <div class="intereses">
+                        <i class="fa-solid fa-book"></i>
+                        <span>LECTURA</span>
+                         </div>                                   
+                </div>
+             </div>
+             <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+             </button>
+    </div>
+ </section>
+
+ <!--PARTE DEL SKILLS-->
+ <section id="skills" class="skills">
+    <div class="contenido-seccion">
+        <h2>Habilidades</h2>        
+        <div class="fila">
+    <!--HABILIDADES TECNICAS "SKILL"-->
+            <div class="col">
+          <h3>Technical Skills</h3>
+          <div class="skill">
+            <span>Javascript</span>
+            <div class="barra-skill">
+                <div class="progreso javascript">
+                    <span>75%</span>
+                </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>HTML & CSS</span>
+            <div class="barra-skill">
+                <div class="progreso htmlcss">
+                    <span>89%</span>
+                </div>
+            </div>
+          </div>
+        <div class="skill">
+            <span>PHOTOSHOP</span>
+            <div class="barra-skill">
+                <div class="progreso photoshop">
+                    <span>40%</span>
+                </div>
+            </div>
+          </div> 
+        <div class="skill">
+            <span>LINUX</span>
+            <div class="barra-skill">
+                <div class="progreso linux">
+                    <span>75%</span>
+                </div>
+            </div>
+          </div>        
+        </div>
+        <!--Habilidades Profesionales-->
+        <div class="col">
+            <h3>Profesional Skills</h3>
+         <div class="skill">
+              <span>COMUNICACION</span>
+              <div class="barra-skill">
+                  <div class="progreso comunicacion">
+                      <span>85%</span>
+                  </div>
+              </div>
+            </div>
+        <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                  <div class="progreso trabajo">
+                      <span>80%</span>
+                  </div>
+              </div>
+            </div>
+        <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                  <div class="progreso creatividad">
+                      <span>99%</span>
+                  </div>
+              </div>
+            </div> 
+        <div class="skill">
+              <span>Dedicacion</span>
+              <div class="barra-skill">
+                  <div class="progreso dedicacion">
+                      <span>70%</span>
+                  </div>
+              </div>
+            </div> 
+        <div class="skill">
+                <span>Proyect Management</span>
+                <div class="barra-skill">
+                    <div class="progreso proyect">
+                        <span>83%</span>
+                    </div>
+                </div>
+              </div>         
+          </div>
+
+    </div>
+    <div>
+</section>        
+<!--PARTE DEL CURRICULUM, reutilizo parte de SKILLS-->
+<section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Educacion</h3>
+                <div class="item izq">
+                    <h4>Arte y Multimedia</h4>
+                    <span class="casa">Michigan</span>
+                    <span class="fecha">2004 - 2010</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur a
+                    dipisicing elit. Ducimus perferendis ab perspiciatis sed odit inventore expedita eos tempora ratione ad. 
+                    Ab fuga accusantium reiciendis, modi labore eum repellendus vero? Quibusdam.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Arte y Multimedia</h4>
+                    <span class="casa">Michigan</span>
+                    <span class="fecha">2004 - 2010</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur a
+                    dipisicing elit. Ducimus perferendis ab perspiciatis sed odit inventore expedita eos tempora ratione ad. 
+                    Ab fuga accusantium reiciendis, modi labore eum repellendus vero? Quibusdam.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Arte y Multimedia</h4>
+                    <span class="casa">Michigan</span>
+                    <span class="fecha">2004 - 2010</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur a
+                    dipisicing elit. Ducimus perferendis ab perspiciatis sed odit inventore expedita eos tempora ratione ad. 
+                    Ab fuga accusantium reiciendis, modi labore eum repellendus vero? Quibusdam.</p>
+                    <div class="conectori">
+                    <div class="circuloi"></div>
+                </div>           
+            </div>
+            </div>
+            <div class="col derecha">
+                <h3>Experiencia</h3>
+                <div class="item der">
+                    <h4>Arte y Multimedia</h4>
+                    <span class="casa">Michigan</span>
+                    <span class="fecha">2004 - 2010</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur a
+                    dipisicing elit. Ducimus perferendis ab perspiciatis sed odit inventore expedita eos tempora ratione ad. 
+                    Ab fuga accusantium reiciendis, modi labore eum repellendus vero? Quibusdam.</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Front Developer</h4>
+                    <span class="casa">Nombre de Compañia</span>
+                    <span class="fecha">2004 - 2010</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur a
+                    dipisicing elit. Ducimus perferendis ab perspiciatis sed odit inventore expedita eos tempora ratione ad. 
+                    Ab fuga accusantium reiciendis, modi labore eum repellendus vero? Quibusdam.</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Front Developer</h4>
+                    <span class="casa">Nombre de Compañia</span>
+                    <span class="fecha">2004 - 2010</span>
+                    <p>Lorem ipsum, dolor sit amet consectetur a
+                    dipisicing elit. Ducimus perferendis ab perspiciatis sed odit inventore expedita eos tempora ratione ad. 
+                    Ab fuga accusantium reiciendis, modi labore eum repellendus vero? Quibusdam.</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </div>
+</section>
+<!--PARTE DEL PORTOFOLIO, tambien reutilizo parte de SKILLS y de CURRICULUM-->
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <img src="img/img2/imagen1.jpg" alt="">
+                <div class="overlay">
+                    <h3>Diseño Creativo</h3>
+                    <p>Fotografía</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/img2/imagen2.jpg" alt="">
+                <div class="overlay">
+                    <h3>Diseño Creativo</h3>
+                    <p>Fotografía</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/img2/imagen3.jpg" alt="">
+                <div class="overlay">
+                    <h3>Diseño Creativo</h3>
+                    <p>Fotografía</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/img2/imagen4.jpg" alt="">
+                <div class="overlay">
+                    <h3>Diseño Creativo</h3>
+                    <p>Fotografía</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/img2/imagen5.jpg" alt="">
+                <div class="overlay">
+                    <h3>Diseño Creativo</h3>
+                    <p>Fotografía</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/img2/imagen6.jpg" alt="">
+                <div class="overlay">
+                    <h3>Diseño Creativo</h3>
+                    <p>Fotografía</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!--PARTE DE CONTACTOS-->
+<section id="contacto" class="contacto">
+ <div class="contenido-seccion">
+    <h2>CONTACTO</h2>
+    <div class="fila">
+        <!--hacemos un formulario-->
+        <div class="col">
+          <input type="text" placeholder="Tu Nombre">
+          <input type="text" placeholder="Numero Telefonico">
+          <input type="text" placeholder="Direccion de Correo">
+          <input type="text" placeholder="Tema">
+          <Textarea name="" id="30" rows="10" placeholder="Mensaje"></Textarea>
+          <button>
+            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+            <span class="overlay"></span>
+          </button>
+        </div>
+        <!--mapa-->
+        <div class="col">
+            <img src="img/mapa.jpg" alt="">
+            <div class="info">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Michigan 264, Estados Unidos
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        Llamanos: (470) 782-4145
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        Email: cw@example.com
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+ </div>   
+</section>
+
+<!--footer-->
+<footer>
+    <a href="#inicio" class="arriba">
+     <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-skype"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-solid fa-rss"></i></i></a>
+    </div>
+</footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
